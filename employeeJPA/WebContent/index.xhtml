@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      
+
+<h:head></h:head>
+
+ 
+<h:body>
+    	
+	<h:form>
+	
+	  <table>
+                <tr>
+                    <td>First Name</td>
+                    <td><h:inputText value="#{employeeViewAdd.firstName}" /></td>
+                </tr>
+                    
+                <tr>
+                    <td>Last Name</td>
+                    <td><h:inputText value="#{employeeViewAdd.lastName}" /></td>
+                </tr>
+                
+                
+                <tr>
+                    <td>Salary</td>
+                    <td><h:inputText value="#{employeeViewAdd.salary}" /></td>
+                </tr>
+                    
+
+                <tr>
+                    <td></td>
+                    <td><h:commandButton  value="Add Employee" action="#{employeeViewAdd.addEmployeeToView()}">
+                        </h:commandButton>
+                    </td>                   
+                </tr>
+            
+            </table>
+            
+        </h:form>
+</h:body> 
+</html>
